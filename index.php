@@ -49,10 +49,10 @@
                 </div>
             </div>
             <div class="uk-card-body uk-background-muted home__card01__body">
-                <div uk-grid>
+                <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-expand">
-                        <div class="uk-text-uppercase home__card01__body__box1__txt1">buy usdt by usd</div>
-                        <div class="home__card01__body__box1__txt2">These transactions will be stored</div>
+                        <div class="uk-text-uppercase home__card01__body__box1__txt1 line-clamp-1">buy usdt by usd</div>
+                        <div class="home__card01__body__box1__txt2 line-clamp-1">These transactions will be stored</div>
                     </div>
                     <div class="uk-width-auto">
                         <a href="" class="uk-button uk-visible@m uk-border-rounded uk-button-default home__card01__body__box1__btn">
