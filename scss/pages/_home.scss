@@ -1,0 +1,121 @@
+.home{
+  &__block1{
+    &__txt{
+      line-height: 0.2;
+      letter-spacing: 3.34px;
+      @extend .fz-84;
+      font-family: $font-ProximaNovaCond-Bold;
+
+      background-image: linear-gradient(to right, #125df6, #23a3f8), linear-gradient(to bottom, #ffffff, #ffffff);
+      color: #ffffff;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__card01{
+    @include media-breakpoint-up('m'){
+      margin-top: -23px;
+    }
+    &__header{
+      border: none !important;
+      padding: 0;
+    }
+    &__body{
+      background-color: #f0f3f8;
+      padding: 15px;
+      @include media-breakpoint-up('m'){
+        padding: 30px;
+      }
+      &__box1{
+        &__txt1{
+          color: #0d0d15;
+          @extend .fz-20;
+          font-family: $font-OpenSans-SemiBold;
+          line-height: (16/20);
+          margin-bottom: 9px;
+        }
+        &__txt2{
+          @extend .fz-15;
+          color: #0d0d15;
+          line-height: (13/15);
+        }
+        &__btn{
+          color: rgba(62, 65, 74, 0.8);
+          @extend .fz-18;
+          border-color: #3ab54b;
+          text-transform: inherit;
+          padding: 0 20px;
+          line-height: 44px;
+          &__img{
+            width: 22px;
+          }
+        }
+      }
+      &__radioProtocol{
+        //width: 13px;
+        //height: 13px;
+        &:checked{
+          background-position: center !important;
+        }
+      }
+      &__radioTxt{
+        color: rgba(1, 1, 1, 0.7);
+        @extend .fz-20;
+        .home__card01__body__radioProtocol:checked + &{
+          color: rgba(1, 1, 1, 1);
+        }
+      }
+      &__label{
+        @extend .fz-20;
+        color: #010101;
+        line-height: (14/20);
+        @include media-breakpoint-up('m'){
+          text-align: right;
+          margin-top: 10px !important;
+        }
+      }
+      &__formTxt{
+        @include media-breakpoint-up('m'){
+          position: relative;
+          top: 5px;
+        }
+      }
+      &__input{
+        border-color: #afafaf;
+        @extend .fz-20;
+        color: rgba(1, 1, 1, 1);
+        height: 48px;
+        &::placeholder{
+          color: rgba(1, 1, 1, 0.6);
+          @extend .fz-15;
+        }
+      }
+      &__amount{
+        color: #23a3f8;
+        @extend .fz-20;
+        font-family: $font-OpenSans-Bold;
+      }
+      &__small{
+        @extend .fz-15;
+        &--error{
+          color: #ff0000;
+          font-family: $font-OpenSans-Light;
+        }
+        &--text{
+          font-family: $font-OpenSans-LightItalic;
+          color: #909091;
+        }
+      }
+      &__btnSubmit{
+        background-image: linear-gradient(to top, #125df6, #23a3f8);
+        @extend .fz-25;
+        color: #ffffff;
+        line-height: 46px;
+        @include media-breakpoint-up('m'){
+          min-width: 418px;
+        }
+      }
+    }
+  }
+}

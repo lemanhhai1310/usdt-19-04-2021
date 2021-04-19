@@ -1,0 +1,40 @@
+.header{
+  background: $color1;
+  &__item{
+    min-height: 50px;
+  }
+  .uk-navbar-nav{
+    >li{
+      >a{
+        @extend .header__item;
+        text-transform: inherit;
+        color: #ffffff;
+        @extend .fz-13;
+      }
+    }
+  }
+  .uk-logo{
+    span{
+      text-transform: uppercase;
+      @extend .fz-23;
+      line-height: (17/23);
+      letter-spacing: 0.92px;
+      font-family: $font-OpenSans-Bold;
+      color: #ffffff;
+    }
+    img{
+      height: 28px;
+    }
+  }
+  .uk-navbar-item{
+    @extend .header__item;
+  }
+}
+.block1{
+  padding: 7px 0;
+  &__txt{
+    @extend .fz-13;
+    color: $color2;
+    font-family: $font-OpenSans-Light;
+  }
+}
