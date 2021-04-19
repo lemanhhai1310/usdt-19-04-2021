@@ -138,12 +138,18 @@
   &__block3{
     margin-left: 0 !important;
     &__txt{
-      color: #081854;
       font-family: $font-OpenSans-SemiBold;
       letter-spacing: -0.7px;
       @extend .fz-35;
+      color: rgba(8, 24, 84, 0.3);
+      .uk-active &{
+        color: #081854;
+      }
       span{
-        color: #23a3f8;
+        color: rgba(8, 24, 84, 0.3);
+        .uk-active &{
+          color: #23a3f8;
+        }
       }
     }
     >li{
@@ -152,6 +158,9 @@
         >a{
           background-color: #fff !important;
           color: rgba(8, 24, 84, 1);
+          img{
+            filter: grayscale(0%) !important;
+          }
         }
       }
       >a{
@@ -161,6 +170,9 @@
         align-items: center;
         padding: 0 30px !important;
         color: rgba(8, 24, 84, 0.3);
+        img{
+          filter: grayscale(100%);
+        }
       }
     }
   }
