@@ -1,0 +1,9 @@
+.footer{
+  $x: 6px;
+  padding: #{$x} 0;
+  background: rgba(#0e1017, 0.27);
+  &__txt{
+    @extend .fz-12;
+    color: #ffffff;
+  }
+}

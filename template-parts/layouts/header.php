@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>BASE - <?= /** @var TYPE_NAME  */
+    <title>USDT - <?= /** @var TYPE_NAME  */
         (isset($data['title'])) ? $data['title'] : ''; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <!--CSS-->
@@ -20,4 +20,4 @@
 </head>
 <body class="<?= ($is_home) ? 'isHome' : '' ?>">
 <?php require "template-parts/commons/facebook_chat.php"; ?>
-<section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/Background.png" uk-img>
