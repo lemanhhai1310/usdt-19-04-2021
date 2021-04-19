@@ -3,7 +3,7 @@
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="" uk-toggle="cls: uk-section-small; mode: media; media: @m" uk-height-viewport="offset-top: true;offset-bottom: true;">
     <div class="uk-container uk-padding-remove">
-        <div class="uk-text-center uk-position-relative home__block1">
+        <div class="uk-text-center uk-position-relative home__block1 uk-visible@m">
             <img src="images/USDT.png" alt="">
             <div class="uk-position-center">
                 <span class="home__block1__txt">BUY TETHER USDT</span>
@@ -11,7 +11,42 @@
         </div>
         <div class="uk-card uk-card-default home__card01">
             <div class="uk-card-header uk-background-default home__card01__header">
-
+                <div class="uk-grid-match uk-visible@m" uk-grid>
+                    <div class="uk-width-expand">
+                        <ul class="uk-subnav uk-subnav-pill home__block3" uk-switcher>
+                            <li>
+                                <a href="#">
+                                    <div class="uk-grid-5 uk-flex-middle" uk-grid>
+                                        <div>
+                                            <img src="images/Forma11.png" alt="">
+                                        </div>
+                                        <div>
+                                            <div class="home__block3__txt">TETHER USDT / <span>USD</span></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="uk-grid-5 uk-flex-middle" uk-grid>
+                                        <div>
+                                            <img src="images/Forma11.png" alt="">
+                                        </div>
+                                        <div>
+                                            <div class="home__block3__txt">TETHER USDT / <span>RIEL</span></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-auto@m">
+                        <div class="home__block2">
+                            <div class="home__block2__txt1">1 USDT = 1 USD</div>
+                            <div class="home__block2__txt2">CURENT PRICE</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="uk-card-body uk-background-muted home__card01__body">
                 <div uk-grid>
@@ -20,10 +55,14 @@
                         <div class="home__card01__body__box1__txt2">These transactions will be stored</div>
                     </div>
                     <div class="uk-width-auto">
-                        <a href="" class="uk-button uk-border-rounded uk-button-default home__card01__body__box1__btn">
+                        <a href="" class="uk-button uk-visible@m uk-border-rounded uk-button-default home__card01__body__box1__btn">
                             <img class="home__card01__body__box1__btn__img" src="images/Forma1.png" alt="">
                             History
                         </a>
+                        <div class="uk-hidden@m">
+                            <div class="home__block2__txt1">1 USDT = 1 USD</div>
+                            <div class="home__block2__txt2">CURENT PRICE</div>
+                        </div>
                     </div>
                 </div>
                 <div class="uk-card uk-card-default uk-padding-small uk-margin">

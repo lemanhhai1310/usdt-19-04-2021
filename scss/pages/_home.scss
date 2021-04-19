@@ -20,6 +20,7 @@
     &__header{
       border: none !important;
       padding: 0;
+      background-color: #f5f5f5;
     }
     &__body{
       background-color: #f0f3f8;
@@ -115,6 +116,51 @@
         @include media-breakpoint-up('m'){
           min-width: 418px;
         }
+      }
+    }
+  }
+  &__block2{
+    @extend .home__card01__body;
+    background-color: #f5f5f5;
+    &__txt1{
+      color: $color3;
+      font-family: $font-OpenSans-Bold;
+      line-height: (20/26);
+      @extend .fz-26;
+      margin-bottom: 10px;
+    }
+    &__txt2{
+      color: $color5;
+      @extend .fz-15;
+      line-height: (12/15);
+    }
+  }
+  &__block3{
+    margin-left: 0 !important;
+    &__txt{
+      color: #081854;
+      font-family: $font-OpenSans-SemiBold;
+      letter-spacing: -0.7px;
+      @extend .fz-35;
+      span{
+        color: #23a3f8;
+      }
+    }
+    >li{
+      padding-left: 0 !important;
+      &.uk-active{
+        >a{
+          background-color: #fff !important;
+          color: rgba(8, 24, 84, 1);
+        }
+      }
+      >a{
+        background-color: #ebebeb !important;
+        height: 100%;
+        display: flex !important;
+        align-items: center;
+        padding: 0 30px !important;
+        color: rgba(8, 24, 84, 0.3);
       }
     }
   }
