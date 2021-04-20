@@ -5,11 +5,17 @@
   }
   .uk-navbar-nav{
     >li{
+      &:last-child{
+        >a{
+          border-right: 1px solid #0a0a0c;
+        }
+      }
       >a{
         @extend .header__item;
         text-transform: inherit;
         color: #ffffff;
         @extend .fz-13;
+        border-left: 1px solid #0a0a0c;
       }
     }
   }

@@ -41,22 +41,58 @@
                     </div>
 
                     <div class="uk-navbar-right">
-
+                        <?php $ratio = 0.8; ?>
                         <ul class="uk-navbar-nav uk-visible@m">
-                            <li class="uk-active"><a href="#">Active</a></li>
                             <li>
-                                <a href="#">Parent</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">Active</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li><a href="#">Item</a></li>
-                                    </ul>
-                                </div>
+                                <a href="#">
+                                    <div class="uk-grid-5 uk-flex-middle" uk-grid>
+                                        <div>
+                                            <span uk-icon="icon: bookmark; ratio: <?= $ratio ?>"></span>
+                                        </div>
+                                        <div>
+                                            <span>Basic Knowledge</span>
+                                        </div>
+                                    </div>
+                                </a>
                             </li>
-                            <li><a href="#">Item</a></li>
+                            <li>
+                                <a href="#">
+                                    <div class="uk-grid-5 uk-flex-middle" uk-grid>
+                                        <div>
+                                            <span uk-icon="icon: search; ratio: <?= $ratio ?>"></span>
+                                        </div>
+                                        <div>
+                                            <span>Transaction search</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="uk-grid-5 uk-flex-middle" uk-grid>
+                                        <div>
+                                            <span uk-icon="icon: user; ratio: <?= $ratio ?>"></span>
+                                        </div>
+                                        <div>
+                                            <span>Login/Register</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="uk-grid-5 uk-flex-middle" uk-grid>
+                                        <div>
+                                            <img src="" alt="">
+                                        </div>
+                                        <div>
+                                            <span>English</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                            </li>
                         </ul>
-
                     </div>
 
                 </nav>
@@ -66,7 +102,7 @@
     <div class="block1 uk-background--06 uk-section-xsmall uk-visible@m">
         <marquee>
             <div class="uk-container">
-                <div uk-grid>
+                <div class="uk-grid-120-m" uk-grid>
                     <?php
                     $data = array(
                         "BitOneX Lists Ontology (ONT)( 03-08 )",
